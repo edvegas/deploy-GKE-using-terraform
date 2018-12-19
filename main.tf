@@ -27,13 +27,12 @@ resource "google_container_cluster" "primary" {
 resource "google_compute_firewall" "default" {
   name    = "k8s-allow"
   network = "default"
+  project = "${var.project_id}"
 
   allow {
     protocol = "tcp"
     ports    = ["30000-32767"]
   }
-
-  source_tags = ["k8s"]
 }
 
 # The following outputs allow authentication and connectivity to the GKE Cluster.
