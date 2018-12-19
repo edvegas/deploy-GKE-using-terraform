@@ -23,6 +23,6 @@ Find a port which is used for service ui
 
 ```kubectl describe service ui -n dev | grep NodePort```
 
-Go to url ```http://external_ip:port```
+Go to url ```http://external_ip:nodeport``` and enjoy
 
 #### Perfect! We successfully deployed our app!
