@@ -2,5 +2,5 @@ project_id = "projectname"
 #gc_zone = "europe-west1-b"
 #cluster_name = "clustername"
 #node_count = 3
-#disk_size = "20GB"
+#disk_size_in_gb = "20GB"
 #machine = "g1-small"

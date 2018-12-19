@@ -17,7 +17,7 @@ resource "google_container_cluster" "primary" {
       "https://www.googleapis.com/auth/monitoring",
     ]
 
-    disk_size_gb = "${var.disk_size}"
+    disk_size_gb = "${var.disk_size_in_gb}"
     machine_type = "${var.machine}"
 
     tags = ["k8s"]
