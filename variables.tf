@@ -19,7 +19,7 @@ variable node_count {
 
 variable disk_size_in_gb {
   description = "Disk size of each node"
-  default     = "30GB"
+  default     = 30
 }
 
 variable machine {
