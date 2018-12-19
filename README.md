@@ -42,7 +42,7 @@ To be able to manage cluster from your PC, use something like:
 
 ```gcloud container clusters get-credentials my-cluster-name --zone us-central1-a --project my-project-id```
 
-Change my-cluster-name and my-project-id accordingly before running a command
+Change zone, my-cluster-name and my-project-id accordingly before running a command
 
 To verify you are connected to cluster, type:
 
