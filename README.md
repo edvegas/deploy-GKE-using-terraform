@@ -11,7 +11,7 @@ Other variables are optional. Uncomment and define if necessary. Default setting
 
 ```zone                    - europe-west1-b
 cluster name               - cluster-1
-number of nodes in cluster - 3
+number of nodes            - 3
 disk size on each node     - 30GB
 machine type               - n1-standard-1 / 3.75GB RAM, 1 CPU 
 ```
