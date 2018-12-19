@@ -49,3 +49,7 @@ To verify you are connected to cluster, type:
 ```kubectl config current-context```
 
 #### That's it. If you want to test and deploy application on this cluster, use [Set Up Web Application](application-setup.md) instructions 
+
+If you don't need cluster anymore, type:
+
+```terraform destroy```
