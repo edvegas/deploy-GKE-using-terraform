@@ -16,10 +16,9 @@ resource "google_container_cluster" "primary" {
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
     ]
-    
+
     disk_size_gb = "${var.disk_size}"
     machine_type = "${var.machine}"
-
 
     tags = ["k8s"]
   }
@@ -37,7 +36,6 @@ resource "google_compute_firewall" "default" {
   source_tags = ["k8s"]
 }
 
-
 # The following outputs allow authentication and connectivity to the GKE Cluster.
 output "client_certificate" {
   value = "${google_container_cluster.primary.master_auth.0.client_certificate}"
@@ -50,4 +48,3 @@ output "client_key" {
 output "cluster_ca_certificate" {
   value = "${google_container_cluster.primary.master_auth.0.cluster_ca_certificate}"
 }
-
